@@ -1,0 +1,1 @@
+export const isProjectManager = (user) => user.type === 'ProjectManager';

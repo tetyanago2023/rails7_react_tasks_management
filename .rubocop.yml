@@ -1,0 +1,31 @@
+Style/Documentation:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - '**/*_spec.rb'
+    - '**/factories/**.rb'
+    - '**/db/schema.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - '**/migrate/**.rb'
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - '**/*_spec.rb'
+    - '**/factories/**.rb'
+    - '**/*_helper.rb'
+    - 'Gemfile'
+
+StringLiterals:
+  Exclude:
+    - '**/db/schema.rb'
+
+Style/NumericLiterals:
+  Exclude:
+    - '**/db/schema.rb'
