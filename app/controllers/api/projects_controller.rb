@@ -5,7 +5,7 @@ module Api
     before_action :check_project_manager, only: [:create, :update]
 
     def index
-      @projects = Project.all.order('created_at DESC')
+      @projects = current_user.projects.order('created_at DESC')
       render json: { projects: @projects.as_json(include: [
                                                    :project_manager,
                                                    :employee,
