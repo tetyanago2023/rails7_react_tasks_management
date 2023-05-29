@@ -12,8 +12,8 @@ RSpec.describe 'Api::Employees', type: :request do
 
       expect(response).to have_http_status(:ok)
       expect(JSON.parse(response.body)['employees']).to contain_exactly(
-        employee2.as_json,
-        employee1.as_json
+        employee2.as_json(except: [:password_digest]),
+        employee1.as_json(except: [:password_digest])
       )
     end
   end
