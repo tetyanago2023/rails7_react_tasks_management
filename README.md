@@ -22,7 +22,7 @@ The RedFlag application is built on:
 5. Install Ruby from terminal (e.g. using RVM: `$ rvm install 3.1.2`)
 6. Install posgtresql from terminal: `$ brew install postgresql` and follow on screen instructions (very important)
 7. Create postgresql superuser postgres: `$ createuser postgres -s`
-8. Change your directory to where you want your work projects in terminal and clone the git repo
+8. Change your directory to where you want your work projects in terminal and clone the git repo: `$ git clone git@github.com:Tetyana2015/redflag.git`
 9. Go into the directory `$ cd redflag`. Confirm that when you run `$ rvm gemset list` it lists "redflag" as your gemset.
 10. Run `$ gem install bundler`
 11. Run `$ gem update --system`
@@ -98,3 +98,5 @@ In order to check the due date on Tasks and switch Tasks to "late" status if due
 **Frontend is present as well as API functionality to `login` with an `email` and `password` as any of the `Project Managers` or `Employees`.**
 
 Set of `rspec` tests as well as set of `factories` were created - ref. folder `spec`.
+
+For demo tap this link - [LINK](https://www.loom.com/share/5b6fcc35b51d463ea376e296fc81977a)
