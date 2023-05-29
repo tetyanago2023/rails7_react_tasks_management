@@ -6,7 +6,7 @@ module Api
 
     def index
       @employees = Employee.all.order('created_at DESC')
-      render json: { employees: @employees.as_json }, status: :ok
+      render json: { employees: @employees.as_json(except: [:password_digest]) }, status: :ok
     end
 
     def create
