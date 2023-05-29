@@ -19,6 +19,8 @@ const Projects = ({currentUser}) => {
 
     return (
         <div>
+            <Link to='/employees' className="btn btn-sm custom-button mb-1" role="button">Show Employees</Link>
+            <br/>
             { isProjectManager(currentUser) &&
                 <Link to={'/projects/new'} className="btn btn-sm custom-button" role="button">Create Project</Link> }
             <h1>Projects</h1>

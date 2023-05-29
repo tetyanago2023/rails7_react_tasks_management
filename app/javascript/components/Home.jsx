@@ -6,7 +6,6 @@ export default () => (
         <div className="jumbotron jumbotron-fluid bg-transparent">
             <div className="container secondary-color">
                 <Link to='/projects' className="btn btn-lg custom-button" role="button">Projects</Link>
-                <Link to='/employees' className="btn btn-lg custom-button" role="button">Employees</Link>
             </div>
         </div>
     </div>
