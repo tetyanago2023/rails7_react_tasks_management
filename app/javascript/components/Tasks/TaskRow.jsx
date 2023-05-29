@@ -61,7 +61,6 @@ const TaskRow = ({ task, project, currentUser }) => {
                 <tr>
                     <td colSpan={7}>
                         <table className={'table mb-0'}>
-                            {/*<tr>*/}
                                 <thead className={"table-danger"}>
                                     <tr>
                                         <th scope="col">SubTask Title</th>
@@ -83,7 +82,6 @@ const TaskRow = ({ task, project, currentUser }) => {
                                     })
                                 }
                                 </tbody>
-                            {/*</tr>*/}
                         </table>
                     </td>
                 </tr>

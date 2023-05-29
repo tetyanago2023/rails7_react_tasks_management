@@ -79,13 +79,6 @@ const NewEmployee = ({ currentUser }) => {
                         onChange={(e) => setTitle(e.target.value)}
                     />
                 </div>
-                {/*<input*/}
-                {/*    placeholder="title"*/}
-                {/*    type="text"*/}
-                {/*    name="title"*/}
-                {/*    value={title}*/}
-                {/*    onChange={(e) => setTitle(e.target.value)}*/}
-                {/*/>*/}
                 <div className={"mb-3"}>
                     <label>
                         <div className={"mb-1"}>Work focus</div>
@@ -96,23 +89,11 @@ const NewEmployee = ({ currentUser }) => {
                         </select>
                     </label>
                 </div>
-
-                {/*<label>*/}
-                {/*    Work focus*/}
-                {/*    <select value={workFocus} onChange={handleChangeWorkFocus}>*/}
-                {/*        {workFocusOptions.map((option) => (*/}
-                {/*            <option key={option} value={option}>{option}</option>*/}
-                {/*        ))}*/}
-                {/*    </select>*/}
-                {/*</label>*/}
                 <div className={"mb-3"}>
                     <button placeholder="submit" type="submit" className="btn btn-sm custom-button">
                         Submit
                     </button>
                 </div>
-                {/*<button placeholder="submit" type="submit" className="btn btn-sm custom-button">*/}
-                {/*    Submit*/}
-                {/*</button>*/}
             </form>
         </div>
     );
